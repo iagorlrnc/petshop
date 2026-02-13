@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { supabase } from "../lib/supabase"
 import {
   Scissors,
@@ -154,12 +155,12 @@ export function Services() {
             <p className="text-responsive mb-6 opacity-90">
               Agende agora mesmo e garanta o melhor atendimento para seu amigo
             </p>
-            <a
-              href="/agendamento"
+            <Link
+              to="/agendamento"
               className="inline-block btn-responsive bg-white text-pet-orange font-bold rounded-full hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Agendar Serviço
-            </a>
+            </Link>
           </div>
         </div>
       </div>
