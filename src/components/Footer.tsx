@@ -1,4 +1,4 @@
-import { Instagram, Facebook, MessageSquare } from "lucide-react"
+import { Instagram, MessageSquare } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,7 +10,7 @@ export function Footer() {
           {/* Sobre */}
           <div>
             <h3 className="text-pet-orange text-lg sm:text-xl font-bold mb-4">
-              🐾 PetShop Amigos
+              🐾 PetShop
             </h3>
             <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-relaxed">
               Seu petshop de confiança com produtos de qualidade, serviços de
@@ -31,7 +31,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <span>📧</span>
-                <span className="break-all">contato@petshopmigos.com</span>
+                <span className="break-all">contato@petshop.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <span>📍</span>
@@ -56,15 +56,6 @@ export function Footer() {
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 p-2.5 sm:p-3 rounded-lg hover:shadow-lg hover:shadow-blue-600/50 transition-all group"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:scale-110 transition-transform" />
-              </a>
-              <a
                 href="https://whatsapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -79,7 +70,7 @@ export function Footer() {
 
         <div className="border-t border-pet-orange/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-600 dark:text-gray-400 text-xs sm:text-sm">
           <p>
-            &copy; {currentYear} PetShop Amigos. Todos os direitos reservados.
+            &copy; {currentYear} PetShop. Todos os direitos reservados.
           </p>
         </div>
       </div>

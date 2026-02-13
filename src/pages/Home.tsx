@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { ArrowRight, Heart, Package, Truck } from "lucide-react"
+import { ArrowRight, Heart, Package } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import { supabase } from "../lib/supabase"
 
@@ -63,8 +63,8 @@ export function Home() {
             <span className="text-pet-orange">merece</span>
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-base sm:text-lg lg:text-xl text-gray-100 animate-fade-in px-4">
-            Encontre os melhores produtos, serviços de grooming e cuidados para
-            seu companheiro de quatro patas. Tudo com amor e qualidade!
+            Encontre os melhores produtos, serviços e cuidados para seu
+            companheiro de quatro patas. Tudo com amor e qualidade!
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-fade-in px-4">
             <button
@@ -107,9 +107,9 @@ export function Home() {
                 desc: "Alimentos, brinquedos, acessórios e muito mais",
               },
               {
-                icon: Truck,
-                title: "Entrega Rápida",
-                desc: "Receba seus pedidos em até 48 horas",
+                icon: Heart,
+                title: "Tratados com Amor",
+                desc: "Cada pet recebe carinho e dedicação especial em cada serviço e interação",
               },
             ].map((feat) => (
               <div
@@ -197,7 +197,7 @@ export function Home() {
             Seu pet merece o melhor! 🐾
           </h2>
           <p className="mx-auto mb-8 max-w-lg text-responsive text-white/90">
-            Descubra nossos serviços de grooming profissional e cuidados
+            Descubra nossos serviços profissionais e cuidados
             especiais para manter seu amigo sempre bonito e saudável.
           </p>
           <button
