@@ -69,17 +69,6 @@ export function Services() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20 pb-12">
       <div className="container-safe py-8 sm:py-12">
-        {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
-          <h1 className="heading-responsive font-bold text-gray-900 dark:text-white mb-4">
-            Nossos Serviços
-          </h1>
-          <p className="text-responsive text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4">
-            Oferecemos serviços completos de cuidado e bem-estar para seu pet
-            com profissionais qualificados e ambiente acolhedor
-          </p>
-        </div>
-
         {/* Grid de Serviços */}
         {services.length === 0 ? (
           <div className="text-center py-12">

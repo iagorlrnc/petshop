@@ -21,6 +21,7 @@ export function Header({ onLoginClick, hideOnTop = false }: HeaderProps) {
     home: "/",
     catalog: "/catalogo",
     services: "/servicos",
+    location: "/localizacao",
     booking: "/agendamento",
     appointments: "/meus-agendamentos",
     admin: "/painel-admin",
@@ -85,6 +86,12 @@ export function Header({ onLoginClick, hideOnTop = false }: HeaderProps) {
               className="text-gray-900 dark:text-white hover:text-pet-orange transition-colors"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => navigate(routes.location)}
+              className="text-gray-900 dark:text-white hover:text-pet-orange transition-colors"
+            >
+              Localização
             </button>
             <button
               onClick={() => navigate(routes.booking)}
@@ -188,6 +195,15 @@ export function Header({ onLoginClick, hideOnTop = false }: HeaderProps) {
               className="block w-full text-left text-gray-900 dark:text-white hover:text-pet-orange px-4 py-2"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => {
+                navigate(routes.location)
+                setIsMenuOpen(false)
+              }}
+              className="block w-full text-left text-gray-900 dark:text-white hover:text-pet-orange px-4 py-2"
+            >
+              Localização
             </button>
             <button
               onClick={() => {

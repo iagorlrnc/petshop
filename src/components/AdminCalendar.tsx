@@ -206,11 +206,11 @@ export function AdminCalendar() {
                   }`}
                 >
                   <div className="flex flex-col items-center justify-center h-full">
-                    <span className="font-semibold text-gray-900 dark:text-white text-xs sm:text-base">
+                    <span className="font-semibold text-gray-900 dark:text-black text-xs sm:text-base">
                       {day}
                     </span>
                     {count > 0 && (
-                      <span className="text-[10px] sm:text-xs font-medium text-gray-700 dark:text-gray-300">
+                      <span className="text-[10px] sm:text-xs font-medium text-gray-700 dark:text-black">
                         {count}
                       </span>
                     )}

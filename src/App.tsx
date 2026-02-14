@@ -14,6 +14,7 @@ import { ScrollToTop } from "./components/ScrollToTop"
 import { Home } from "./pages/Home"
 import { Catalog } from "./pages/Catalog"
 import { Services } from "./pages/Services"
+import { Location } from "./pages/Location"
 import { Booking } from "./pages/Booking"
 import { MyAppointments } from "./pages/MyAppointments"
 import { AdminDashboard } from "./pages/AdminDashboard"
@@ -26,12 +27,21 @@ function AppContent() {
   // Mapear path para página para determinar se deve ocultar header no top
   const getPageFromPath = (
     path: string,
-  ): "home" | "catalog" | "services" | "booking" | "appointments" | "admin" => {
+  ):
+    | "home"
+    | "catalog"
+    | "services"
+    | "location"
+    | "booking"
+    | "appointments"
+    | "admin" => {
     switch (path) {
       case "/catalogo":
         return "catalog"
       case "/servicos":
         return "services"
+      case "/localizacao":
+        return "location"
       case "/agendamento":
         return "booking"
       case "/meus-agendamentos":
@@ -66,6 +76,7 @@ function AppContent() {
           <Route path="/" element={<Home />} />
           <Route path="/catalogo" element={<Catalog />} />
           <Route path="/servicos" element={<Services />} />
+          <Route path="/localizacao" element={<Location />} />
           <Route
             path="/agendamento"
             element={<Booking onLoginClick={() => setIsAuthModalOpen(true)} />}
